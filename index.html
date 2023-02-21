@@ -4,7 +4,6 @@
 var elem = document.documentElement;
 
 /* View in fullscreen */
-function fs() {
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
   } else if (elem.webkitRequestFullscreen) { /* Safari */
@@ -12,7 +11,7 @@ function fs() {
   } else if (elem.msRequestFullscreen) { /* IE11 */
     elem.msRequestFullscreen();
   }
-}
+
 
 /* Close fullscreen */
   if (document.exitFullscreen) {
